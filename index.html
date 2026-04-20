@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حيز — مشروبات طازجة</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="menuClose">✕</button>
+  <a href="#" onclick="closeMobileMenu()">من نحن؟</a>
+  <a href="#" onclick="closeMobileMenu()">القائمة</a>
+  <a href="#" onclick="closeMobileMenu()">فروعنا</a>
+  <a href="#" onclick="closeMobileMenu()">تواصل معنا</a>
+  <a href="#" class="btn-orange" style="margin-top:8px;padding:12px 32px;border-radius:50px">اطلب الآن</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="logo">
+    <img src="pfp_image-removebg-preview.png" alt="حيز"
+      onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'font-size:32px;font-weight:900;color:white;font-family:Cairo,sans-serif\'>حَيِّز</span>'">
+  </div>
+  <ul class="nav-links">
+    <li><a href="#">من نحن؟</a></li>
+    <li><a href="#">القائمة</a></li>
+    <li><a href="#">فروعنا</a></li>
+    <li><a href="#">تواصل معنا</a></li>
+  </ul>
+  <a href="#" class="nav-cta">اطلب الآن</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="فتح القائمة">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-slash"></div>
+  <div class="hero-slash2"></div>
+  <div class="hero-bg-text">حيز</div>
+
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="hero-tag-dot"></span>
+      مشروبات طازجة يومياً
+    </div>
+    <h1 class="hero-headline">
+      حيث يلتقي<br>
+      الطعم<br>
+      <em>بالرقي</em>
+    </h1>
+    <p class="hero-sub">نقدم لك تجربة مشروبات استثنائية بمكونات طازجة مختارة بعناية، في أجواء تحمل دفء البيت وأناقة المكان.</p>
+    <div class="hero-actions">
+      <a href="#" class="btn-primary">اطلب الآن</a>
+      <a href="#" class="btn-ghost">تصفح القائمة</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">+٥٠</div>
+        <div class="stat-label">صنف متنوع</div>
+      </div>
+      <div>
+        <div class="stat-num">١٠٠٪</div>
+        <div class="stat-label">مكونات طازجة</div>
+      </div>
+      <div>
+        <div class="stat-num">+٣</div>
+        <div class="stat-label">فروع في مسقط</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="cup-container">
+      <div class="cup-ring r1"></div>
+      <div class="cup-ring r2"></div>
+      <!-- صورة المشروب مباشرة بدون wrapper -->
+      <img src="cup-removebg-preview.png" class="hero-drink-img" alt="مشروب حيز">
+      <div class="float-tag t1">🍊 برتقال طازج</div>
+      <div class="float-tag t2">🌿 نعناع طبيعي</div>
+      <div class="float-tag t3">❄️ بارد ومنعش</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WAVY DIVIDER — hero → white ═══ -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 C180,100 360,0 540,60 C720,100 900,20 1080,55 C1260,85 1380,30 1440,50 L1440,0 Z" fill="white"/>
+    <path d="M0,0 C200,80 440,10 660,50 C880,88 1100,15 1440,45 L1440,0 Z" fill="rgba(255,255,255,0.4)"/>
+  </svg>
+</div>
+
+<!-- MENU SECTION -->
+<section class="section" id="menu">
+  <div class="menu-header">
+    <div>
+      <div class="section-label">قائمتنا</div>
+      <h2 class="section-title">الأكثر طلباً</h2>
+      <p class="section-sub">اكتشف أشهر مشروباتنا التي تُعيد زوارنا يوماً بعد يوم</p>
+    </div>
+    <a href="#" class="view-all">عرض الكل ←</a>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="menu-card-img bg1">
+        🍹 <span class="card-badge">الأكثر طلباً</span>
+      </div>
+      <div class="menu-card-body">
+        <div class="menu-card-cat">موهيتو</div>
+        <div class="menu-card-name">موهيتو البرتقال</div>
+        <div class="menu-card-desc">مزيج منعش من البرتقال الطازج والنعناع والصودا المثلجة</div>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">١.٨٠٠ ر.ع</span>
+          <button class="menu-card-btn">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img bg2">🥝</div>
+      <div class="menu-card-body">
+        <div class="menu-card-cat">سموذي</div>
+        <div class="menu-card-name">سموذي الكيوي</div>
+        <div class="menu-card-desc">سموذي كثيف غني بالفيتامينات مع كيوي وتفاح أخضر وليمون</div>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">٢.٢٠٠ ر.ع</span>
+          <button class="menu-card-btn">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img bg3">
+        🍓 <span class="card-badge">جديد</span>
+      </div>
+      <div class="menu-card-body">
+        <div class="menu-card-cat">عصير طازج</div>
+        <div class="menu-card-name">عصير الفراولة</div>
+        <div class="menu-card-desc">فراولة طازجة تُعصر أمامك مع رشة جوز الهند المبشور</div>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">١.٥٠٠ ر.ع</span>
+          <button class="menu-card-btn">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEAMLESS MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-inner" id="marqueeEl"></div>
+  </div>
+</div>
+
+<!-- DELIVERY BANNER -->
+<div class="tilt-banner">
+  <div class="tilt-num">٣٠</div>
+  <div class="tilt-text">
+    <h3>توصيل في أقل من <em>٣٠ دقيقة</em></h3>
+    <p>طلبك يصلك طازجاً وبارداً أينما كنت في مسقط</p>
+  </div>
+  <div class="tilt-actions">
+    <a href="#" class="btn-primary">اطلب الآن</a>
+    <a href="#" class="ghost-link">تعرف على المناطق ←</a>
+  </div>
+</div>
+
+<!-- EXPERIENCE SECTION -->
+<section class="exp-section">
+  <div>
+    <div class="section-label" style="color:var(--orange-light)">تجربتنا</div>
+    <h2 class="section-title">لماذا يعود<br>زبائننا دائماً؟</h2>
+    <p class="section-sub">نؤمن أن كل كوب هو لحظة، ونحرص أن تكون كل لحظة استثنائية.</p>
+    <div class="exp-features">
+      <div class="exp-feature">
+        <div class="exp-icon">🍋</div>
+        <div>
+          <div class="exp-feature-title">مكونات طازجة يومياً</div>
+          <div class="exp-feature-desc">نستلم مكوناتنا كل صباح من مصادر محلية موثوقة للحصول على أفضل نكهة</div>
+        </div>
+      </div>
+      <div class="exp-feature">
+        <div class="exp-icon">👨‍🍳</div>
+        <div>
+          <div class="exp-feature-title">محضّرون بخبرة</div>
+          <div class="exp-feature-desc">فريقنا مدرّب على أعلى معايير التحضير لضمان تجربة متسقة في كل زيارة</div>
+        </div>
+      </div>
+      <div class="exp-feature">
+        <div class="exp-icon">⚡</div>
+        <div>
+          <div class="exp-feature-title">توصيل خلال ٣٠ دقيقة</div>
+          <div class="exp-feature-desc">طلبك يصلك طازجاً في أقل وقت ممكن عبر تطبيقنا أو منصات التوصيل</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="exp-visual">
+    <div class="exp-card"><div class="exp-card-num">٥٠+</div><div class="exp-card-label">صنف في القائمة</div></div>
+    <div class="exp-card"><div class="exp-card-num">٤.٩</div><div class="exp-card-label">تقييم العملاء</div></div>
+    <div class="exp-card"><div class="exp-card-num">١٢K</div><div class="exp-card-label">زبون راضٍ شهرياً</div></div>
+    <div class="exp-card"><div class="exp-card-num">٣</div><div class="exp-card-label">فروع في مسقط</div></div>
+    <div class="exp-card highlight"><div class="exp-card-num">منذ ٢٠١٨</div><div class="exp-card-label">نخدمكم بكل شغف وجودة</div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div style="text-align:center;margin-bottom:8px">
+    <div class="section-label" style="display:inline-block">آراء زبائننا</div>
+  </div>
+  <h2 class="section-title" style="text-align:center">ماذا يقولون عنّا</h2>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">موهيتو البرتقال كان خرافياً! من أفضل ما تذوقته في مسقط. المكان نظيف والخدمة سريعة جداً.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">سم</div>
+        <div><div class="testi-name">سارة المعمري</div><div class="testi-date">مسقط · أبريل ٢٠٢٦</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">بصراحة، أصبحت زبوناً دائماً. كل مرة أجرب صنف جديد وما أخيب. السموذي الصحي رائع.</p>
+      <div class="testi-author">
+        <div class="testi-avatar" style="background:var(--black)">خر</div>
+        <div><div class="testi-name">خالد الرواحي</div><div class="testi-date">مسقط · مارس ٢٠٢٦</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★☆</div>
+      <p class="testi-text">التوصيل وصل في أقل من ٢٥ دقيقة والعصير كان طازج تماماً. بالتأكيد سأطلب مرة ثانية.</p>
+      <div class="testi-author">
+        <div class="testi-avatar" style="background:var(--orange-deep)">نع</div>
+        <div><div class="testi-name">نور العامري</div><div class="testi-date">السيب · فبراير ٢٠٢٦</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2 class="cta-title">ابدأ يومك<br>بنكهة <em>مختلفة</em></h2>
+  <div class="cta-actions">
+    <a href="#" class="btn-orange">اطلب الآن</a>
+    <a href="#" class="btn-outline-dark">تواصل معنا</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">
+        <img src="pfp_image-removebg-preview.png" alt="حيز"
+          onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<span style=\'font-size:30px;font-weight:900;color:var(--orange);font-family:Cairo,sans-serif\'>حَيِّز</span>')">
+      </div>
+      <p class="footer-desc">مشروبات طازجة بمكونات مختارة، في أجواء تجمع بين الدفء والأناقة. موجودون في مسقط منذ ٢٠١٨.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">روابط</div>
+      <a href="#">من نحن</a><a href="#">القائمة</a><a href="#">فروعنا</a><a href="#">المدونة</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">الخدمات</div>
+      <a href="#">توصيل</a><a href="#">تجمعات وفعاليات</a><a href="#">طلبات خاصة</a><a href="#">برنامج الولاء</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">تواصل</div>
+      <a href="#">📍 مسقط، عُمان</a>
+      <a href="#">📞 ٩٦٨-٢٤٥٠٠٠٠٠</a>
+      <a href="#">✉️ hello@hayyiz.om</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© ٢٠٢٦ حيز. جميع الحقوق محفوظة.</span>
+    <div class="social-links">
+      <a href="#" class="social-link">in</a>
+      <a href="#" class="social-link">ig</a>
+      <a href="#" class="social-link">tw</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js">
+</script>
+</body>
+</html>
